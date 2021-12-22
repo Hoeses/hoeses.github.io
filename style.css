@@ -1,0 +1,101 @@
+:root {
+  
+ /* --pihe1TopPos: 0px;*/
+  --pihe1BottomPos: 95%;
+  /*--pihe1LeftPos: 450px;*/
+}
+body {
+  /*background-color: #00004d;*/
+  width: 1vw;
+  height: 1vw;
+  background-image: url("pics/christmas-4.jpg");
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  position:absolute;
+  width: 60%;
+  height: 15%;
+  top: 15%;
+  left:5%;
+  color:gold;
+  font-size:124px;
+  font-family: 'Imperial Script', cursive;
+  text-shadow: 4px 4px 16px gold;
+  text-align: center;
+}
+
+audio {
+  position: absolute;
+  top: 90%;
+  opacity: 0.25;
+}
+
+audio:hover {
+  opacity: 0.8;
+}
+
+.pihe1 {
+  width: 3px;
+  height: 3px;
+  filter: blur(1px);
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  animation-name: fall1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  z-index: -2;
+  
+}
+
+.pihe2 {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  filter: blur(3px);
+  border-radius: 50%;
+  position: absolute;
+  animation-name: fall2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  z-index: -1;
+}
+
+.pihe3 {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  filter: blur(5px);
+  border-radius: 50%;
+  position:absolute;
+  animation-name: fall3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  z-index: 0;
+  
+}
+
+@keyframes fall1 {
+  from {top: 0;}
+  to {top:var(--pihe1BottomPos)}
+  
+}
+
+@keyframes fall2 {
+  from {top: 0;}
+  to {top:var(--pihe1BottomPos)}
+  
+}
+
+@keyframes fall3 {
+  from {top: 0;}
+  to {top:var(--pihe1BottomPos)}
+  
+}
+
